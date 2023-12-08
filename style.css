@@ -19,9 +19,14 @@
             background-color: #444;
             padding: 0.5em;
             height: 3rem;
+            flex-wrap: wrap;
 
         }
-
+        @media(max-width: 600px){
+            nav{
+                height: 6rem;
+            }
+        }
         nav a {
             color: #fff;
             text-decoration: none;
@@ -29,7 +34,14 @@
             margin: 0 1em;
             font-weight: bold;
             text-transform: uppercase;
-        
+            margin-left: 50px;
+        }
+
+        @media(max-width: 600px){
+        nav a{
+            font-size: 1rem;
+            margin-left: 1rem;
+        }
         }
 
         nav a:hover{
